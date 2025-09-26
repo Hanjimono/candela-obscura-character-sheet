@@ -1,5 +1,4 @@
 // components
-import NavigationMenu from "@/components/NavigationMenu"
 import Initializer from "@/components/Helpers/Initializer"
 // constants
 import { openSans } from "@/constants/fonts"
@@ -9,10 +8,11 @@ import Frame from "@/ui/Layout/Frame"
 // types and styles
 import "./global.css"
 import Inline from "@/ui/Layout/Inline"
+import { SessionContainer } from "@/components/Containers/SessionContainer"
 
 export const metadata = {
-  title: "ui-boilerplate",
-  description: "Boilerplate for Next.js development with ui-kit"
+  title: "Candela Obscura Sheets",
+  description: "Character sheet manager"
 }
 
 export default function RootLayout({
@@ -34,11 +34,13 @@ export default function RootLayout({
         />
       </head>
       <body className={openSans.className}>
-        <Foundation>
-          <Inline className="h-full" gap="none">
-            <Frame className="main-content">{children}</Frame>
-          </Inline>
-        </Foundation>
+        <SessionContainer>
+          <Foundation>
+            <Inline className="h-full" gap="none">
+              <Frame className="main-content">{children}</Frame>
+            </Inline>
+          </Foundation>
+        </SessionContainer>
         <Initializer />
       </body>
     </html>

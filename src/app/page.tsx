@@ -1,13 +1,5 @@
-"use client"
-import WallDecorated from "@/ui/Layout/Decorators/WallDecorated"
-import Title from "@/ui/Presentation/Title"
+import { AuthProtectedContainer } from "@/components/Containers/AuthProctededContainer"
 
-export default function MainPage() {
-  return (
-    <WallDecorated>
-      <Title size={1} uppercase>
-        Test
-      </Title>
-    </WallDecorated>
-  )
+export default async function MainPage() {
+  return <AuthProtectedContainer>1121</AuthProtectedContainer>
 }
