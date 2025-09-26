@@ -1,0 +1,12 @@
+{
+  "development": {
+    "storage": "./db.sqlite",
+    "dialect": "sqlite",
+    "seederStorage": "sequelize"
+  },
+  "production": {
+    "storage": "./db.sqlite",
+    "dialect": "sqlite",
+    "seederStorage": "sequelize"
+  }
+}

@@ -10,7 +10,10 @@
     "pretty": "npx prettier . --write",
     "prepare-css": "find . -name '*.example.scss' -exec sh -c 'cp \"$0\" \"${0%.example.scss}.scss\"' {} \\;",
     "prepare-husky": "npx husky init",
-    "prepare": "husky"
+    "prepare": "husky",
+    "sequelize": "sequelize-cli --config src/database/config.json --migrations-path src/database/migrations --models-path src/database/models --seeders-path src/database/seeders",
+    "migrate": "sequelize-cli --config src/database/config.json --migrations-path src/database/migrations --models-path src/database/models --seeders-path src/database/seeders db:migrate",
+    "seed": "sequelize-cli --config src/database/config.json --migrations-path src/database/migrations --models-path src/database/models --seeders-path src/database/seeders db:seed:all"
   },
   "lint-staged": {
     "*": [
@@ -34,6 +37,7 @@
     "react-hook-form": "^7.53.0",
     "react-tooltip": "^5.28.0",
     "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
     "sqlite3": "^5.1.7",
     "tailwind-merge": "^3.3.1",
     "tsc": "^2.0.4",
