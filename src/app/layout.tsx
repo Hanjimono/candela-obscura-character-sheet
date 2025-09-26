@@ -36,7 +36,6 @@ export default function RootLayout({
       <body className={openSans.className}>
         <Foundation>
           <Inline className="h-full" gap="none">
-            <NavigationMenu />
             <Frame className="main-content">{children}</Frame>
           </Inline>
         </Foundation>
