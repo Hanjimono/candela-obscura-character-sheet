@@ -3,14 +3,10 @@ import Image from "next/image"
 // Ui
 import Title from "@/ui/Presentation/Title"
 import Beam from "@/ui/Layout/Beam"
+import SmartImage from "@/ui/Presentation/SmartImage"
 
 export default function Logo({ className }: { className?: string }) {
   return (
-    <Beam className={"h-12 items-center py-2 px-4"}>
-      <Image alt="logo" src={"/images/logo_small.png"} width={20} height={20} />
-      <Title className="ml-2" size={5}>
-        Ui-kit
-      </Title>
-    </Beam>
+    <SmartImage src="/public/images/candela_obscura_logo_full.png" alt="Candela Obscura" width={899} height={246} priority />
   )
 }

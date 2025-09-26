@@ -1,5 +1,10 @@
 import { AuthProtectedContainer } from "@/components/Containers/AuthProctededContainer"
+import CharacterListPageContent from "./(characters)/character/list/characterList"
 
 export default async function MainPage() {
-  return <AuthProtectedContainer>1121</AuthProtectedContainer>
+  return (
+    <AuthProtectedContainer>
+      <CharacterListPageContent />
+    </AuthProtectedContainer>
+  )
 }
