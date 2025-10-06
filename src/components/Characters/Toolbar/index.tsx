@@ -1,4 +1,5 @@
 // ui
+import { useFetchAndStoreData } from "@/services/fetcher/fetcher"
 import Button from "@/ui/Actions/Button"
 import Inline from "@/ui/Layout/Inline"
 import Spacer from "@/ui/Layout/Spacer"
@@ -8,6 +9,7 @@ import SmartImage from "@/ui/Presentation/SmartImage"
 import Title from "@/ui/Presentation/Title"
 
 export default function CharactersToolbar() {
+  const [ data, loading, fetchData ] = useFetchAndStoreData<Object>("/api/character/list")
   return (
     <Stack gap="tight">
       <Inline className="items-center">
@@ -18,8 +20,8 @@ export default function CharactersToolbar() {
           height={80}
         />
         <Title>Characters</Title>
-        <Spacer/>
-        <Button icon="add">Add Character</Button>
+        <Spacer />
+        <Button isLoading={loading} icon="add" onClick={fetchData}>Add Character</Button>
       </Inline>
       <Divider />
     </Stack>
