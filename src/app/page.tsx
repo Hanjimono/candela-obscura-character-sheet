@@ -1,10 +1,10 @@
 import { AuthProtectedContainer } from "@/components/Containers/AuthProctededContainer"
-import CharacterListPageContent from "./(characters)/character/list/characterList"
+import CharacterSheet from "@/components/Characters/Sheet"
 
 export default async function MainPage() {
   return (
     <AuthProtectedContainer>
-      <CharacterListPageContent />
+      <CharacterSheet />
     </AuthProtectedContainer>
   )
 }

@@ -64,22 +64,22 @@
   --color-primary-main: #60562a;
   --color-primary-hover: #454028;
   --color-primary-pressed: #3c3523;
-  --color-primary-text: #f4e3e3;
-  --color-primary-transparent: #f4e3e317;
-  --color-primary-icon: #f4e3e3;
-  --color-primary-icon-hover: #f4e3e3;
-  --color-primary-transparent-icon: #f4e3e317;
-  --color-primary-transparent-icon-hover: #f4e3e317;
+  --color-primary-text: #bebebe;
+  --color-primary-transparent: #bebebe17;
+  --color-primary-icon: #bebebe;
+  --color-primary-icon-hover: #bebebe;
+  --color-primary-transparent-icon: #bebebe17;
+  --color-primary-transparent-icon-hover: #bebebe17;
 
-  --color-secondary-main: #bb204e;
-  --color-secondary-hover: #b21745;
-  --color-secondary-pressed: #9e0f3b;
-  --color-secondary-text: #f4e3e3;
-  --color-secondary-transparent: #f4e3e317;
-  --color-secondary-icon: #f4e3e3;
-  --color-secondary-icon-hover: #f4e3e3;
-  --color-secondary-transparent-icon: #f4e3e317;
-  --color-secondary-transparent-icon-hover: #f4e3e317;
+  --color-secondary-main: #976e19;
+  --color-secondary-hover: #7b5313;
+  --color-secondary-pressed: #6b4810;
+  --color-secondary-text: #bebebe;
+  --color-secondary-transparent: #bebebe17;
+  --color-secondary-icon: #bebebe;
+  --color-secondary-icon-hover: #bebebe;
+  --color-secondary-transparent-icon: #bebebe17;
+  --color-secondary-transparent-icon-hover: #bebebe17;
 
   --color-tool-main: #edc3b5;
   --color-tool-hover: #e3613d;
@@ -91,25 +91,25 @@
   --color-tool-transparent-icon: transparent;
   --color-tool-transparent-icon-hover: transparent;
 
-  --color-light-main: #f4e3e3;
+  --color-light-main: #bebebe;
   --color-light-hover: #f4dddd;
-  --color-light-pressed: #f4e3e3;
+  --color-light-pressed: #bebebe;
   --color-light-text: #260004;
-  --color-light-transparent: #f4e3e317;
-  --color-light-icon: #f4e3e3;
+  --color-light-transparent: #bebebe17;
+  --color-light-icon: #bebebe;
   --color-light-icon-hover: #f4dddd;
-  --color-light-transparent-icon: #f4e3e317;
-  --color-light-transparent-icon-hover: #f4e3e317;
+  --color-light-transparent-icon: #bebebe17;
+  --color-light-transparent-icon-hover: #bebebe17;
 
   --color-remove-main: #df6979;
   --color-remove-hover: #d1606f;
   --color-remove-pressed: #b94d5a;
   --color-remove-text: #3c0e0d;
-  --color-remove-transparent: #f4e3e317;
-  --color-remove-icon: #f4e3e3;
-  --color-remove-icon-hover: #f4e3e3;
-  --color-remove-transparent-icon: #f4e3e317;
-  --color-remove-transparent-icon-hover: #f4e3e317;
+  --color-remove-transparent: #bebebe17;
+  --color-remove-icon: #bebebe;
+  --color-remove-icon-hover: #bebebe;
+  --color-remove-transparent-icon: #bebebe17;
+  --color-remove-transparent-icon-hover: #bebebe17;
 
   --color-block-100: #8c565b;
   --color-block-200: #7b4c51;
@@ -134,8 +134,8 @@
 
   --color-title: #967950;
   --color-text: #967950;
-  --color-light: #f4e3e3;
-  --color-accent: #461f24;
+  --color-light: #bebebe;
+  --color-accent: #976e19;
   --color-info: #512a2f;
   --color-success: #1c622e;
   --color-warning: #bb204e;
