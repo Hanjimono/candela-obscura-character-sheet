@@ -1,7 +1,7 @@
 // components
 import Initializer from "@/components/Helpers/Initializer"
 // constants
-import { openSans } from "@/constants/fonts"
+import { ubuntu, oranienbaum } from "@/constants/fonts"
 // ui
 import Foundation from "@/ui/Layout/Foundation"
 import Frame from "@/ui/Layout/Frame"
@@ -33,7 +33,7 @@ export default function RootLayout({
           integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
         />
       </head>
-      <body className={openSans.className}>
+      <body className={ubuntu.className}>
         <SessionContainer>
           <Foundation>
             <Inline className="h-full" gap="none">

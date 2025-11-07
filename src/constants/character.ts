@@ -13,3 +13,5 @@ export const ACTION_TYPES = [
   "focus",
   "sense"
 ] as const
+
+export const MARKS_TYPES = ["body", "mind", "bleed"] as const

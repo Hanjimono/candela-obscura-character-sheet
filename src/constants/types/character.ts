@@ -1,4 +1,4 @@
-import { DRIVES_TYPES, ACTION_TYPES } from "../character";
+import { DRIVES_TYPES, ACTION_TYPES, MARKS_TYPES } from "../character"
 
 /**
  * Represents the types of drives available to a character.
@@ -9,6 +9,11 @@ export type DriveType = (typeof DRIVES_TYPES)[number]
  * Represents the types of actions available to a character.
  */
 export type ActionType = (typeof ACTION_TYPES)[number]
+
+/**
+ * Represents the types of marks available to a character.
+ */
+export type MarkType = (typeof MARKS_TYPES)[number]
 
 /**
  * Represents a character's drive, which is a resource with current and maximum values.
@@ -30,15 +35,15 @@ export interface Action {
   /**
    * The base value of the action.
    */
-  base: number;
+  base: number
   /**
    * The current value of the action, which may differ from the base due to changes.
    */
-  current: number;
+  current: number
   /**
    * Indicates whether the action is gilded (optional).
    */
-  isGilded?: boolean;
+  isGilded?: boolean
 }
 
 /**
@@ -48,17 +53,17 @@ export interface Ability {
   /**
    * The name of the ability in English.
    */
-  name: string,
+  name: string
 
   /**
    * The name of the ability in Russian.
    */
-  nameRu: string,
+  nameRu: string
 
   /**
    * The description of the ability in English.
    */
-  description: string,
+  description: string
 
   /**
    * The description of the ability in Russian.
@@ -73,32 +78,42 @@ export interface CharacterData {
   /**
    * The character's name in English.
    */
-  name: string,
+  name: string
 
   /**
    * The character's name in Russian.
    */
-  nameRu: string,
+  nameRu: string
+
+  /**
+   * The character's role in English.
+   */
+  role: string
+
+  /**
+   * The character's role in Russian.
+   */
+  roleRu: string
 
   /**
    * The character's class in English.
    */
-  class: string,
+  class: string
 
   /**
    * The character's class in Russian.
    */
-  classRu: string,
+  classRu: string
 
   /**
    * Optional URL or path to the character's picture.
    */
-  picture?: string,
+  picture?: string
 
   /**
    * A record of the character's drives, keyed by drive type.
    */
-  drives: Record<DriveType, Drive>,
+  drives: Record<DriveType, Drive>
 
   /**
    * A record of the character's resistances, keyed by drive type.
@@ -108,7 +123,12 @@ export interface CharacterData {
   /**
    * A record of the character's actions, keyed by action type.
    */
-  actions: Record<ActionType, Action>,
+  actions: Record<ActionType, Action>
+
+  /**
+   * A record of the character's marks, keyed by mark type.
+   */
+  marks: Record<MarkType, number>
 
   /**
    * Optional array of the character's abilities.

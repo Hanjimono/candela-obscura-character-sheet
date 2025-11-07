@@ -61,10 +61,10 @@
 
   --color-page: #27302b;
 
-  --color-primary-main: #60562a;
+  --color-primary-main: #DE9B72;
   --color-primary-hover: #454028;
   --color-primary-pressed: #3c3523;
-  --color-primary-text: #bebebe;
+  --color-primary-text: #1a1a1a;
   --color-primary-transparent: #bebebe17;
   --color-primary-icon: #bebebe;
   --color-primary-icon-hover: #bebebe;
@@ -215,9 +215,12 @@
   --width-form-small-element: 1.25rem;
   --height-form-element-sign: 0.75rem;
   --width-form-element-sign: 0.75rem;
-  --radius-button: 1rem;
+  --radius-button: 0.25rem;
   --radius-form-element: 0.75rem;
   /* Endregion ui-settings */
+
+  --shadow-inset-action: inset 0px 0px 80px 0 rgb(0 0 0 / 1);
+  --color-victorian: #DE9B72;
 }
 
 /*
@@ -250,6 +253,18 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.bg-page {
+  background-image: url("/images/bg.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.actions-wrapper {
+  background-image: url("/images/texture.jpg");
+  background-position: 50% 0;
+  background-repeat: repeat;
 }
 
 /* custom scrollbar */
