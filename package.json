@@ -13,7 +13,9 @@
     "prepare": "husky",
     "sequelize": "sequelize-cli --config src/database/config.json --migrations-path src/database/migrations --models-path src/database/models --seeders-path src/database/seeders",
     "migrate": "sequelize-cli --config src/database/config.json --migrations-path src/database/migrations --models-path src/database/models --seeders-path src/database/seeders db:migrate",
-    "seed": "sequelize-cli --config src/database/config.json --migrations-path src/database/migrations --models-path src/database/models --seeders-path src/database/seeders db:seed:all"
+    "seed": "sequelize-cli --config src/database/config.json --migrations-path src/database/migrations --models-path src/database/models --seeders-path src/database/seeders db:seed:all",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "lint-staged": {
     "*": [
@@ -45,6 +47,11 @@
     "zustand": "^4.5.2"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "4.1.1",
+    "@storybook/addon-a11y": "9.1.13",
+    "@storybook/addon-docs": "9.1.13",
+    "@storybook/addon-vitest": "9.1.13",
+    "@storybook/nextjs-vite": "9.1.13",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -52,13 +59,16 @@
     "eslint": "^8",
     "eslint-config-next": "^15.0.0-rc.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-storybook": "10.0.6",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "postcss": "^8.4.49",
     "prettier": "^3.2.5",
     "sass": "^1.77.2",
+    "storybook": "9.1.13",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite": "6"
   },
   "packageManager": "yarn@4.5.1"
 }
