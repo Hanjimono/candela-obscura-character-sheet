@@ -1,3 +1,5 @@
+// system
+import { headers } from "next/headers"
 // components
 import Initializer from "@/components/Helpers/Initializer"
 // constants
@@ -9,6 +11,7 @@ import Frame from "@/ui/Layout/Frame"
 import "./global.css"
 import Inline from "@/ui/Layout/Inline"
 import { SessionContainer } from "@/components/Containers/SessionContainer"
+import { QueryProviderContainer } from "@/components/Containers/QueryProviderContainer"
 
 export const metadata = {
   title: "Candela Obscura Sheets",
@@ -20,6 +23,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const headersList = headers()
   return (
     <html lang="en">
       <head>
@@ -34,14 +38,16 @@ export default function RootLayout({
         />
       </head>
       <body className={ubuntu.className}>
-        <SessionContainer>
-          <Foundation>
-            <Inline className="h-full" gap="none">
-              <Frame className="main-content">{children}</Frame>
-            </Inline>
-          </Foundation>
-        </SessionContainer>
-        <Initializer />
+        <QueryProviderContainer headers={headersList}>
+          <SessionContainer>
+            <Foundation>
+              <Inline className="h-full" gap="none">
+                <Frame className="main-content">{children}</Frame>
+              </Inline>
+            </Foundation>
+          </SessionContainer>
+          <Initializer />
+        </QueryProviderContainer>
       </body>
     </html>
   )

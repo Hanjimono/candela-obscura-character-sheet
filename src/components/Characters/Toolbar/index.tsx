@@ -1,4 +1,5 @@
 // ui
+import { api } from "@/components/Containers/QueryProviderContainer"
 import { useFetchAndStoreData } from "@/services/fetcher/fetcher"
 import Button from "@/ui/Actions/Button"
 import Inline from "@/ui/Layout/Inline"
@@ -10,6 +11,7 @@ import Title from "@/ui/Presentation/Title"
 
 export default function CharactersToolbar() {
   const [ data, loading, fetchData ] = useFetchAndStoreData<Object>("/api/character/list")
+  const charactersData = api.character.list.useQuery()
   return (
     <Stack gap="tight">
       <Inline className="items-center">

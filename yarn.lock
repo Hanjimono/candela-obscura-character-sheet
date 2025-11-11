@@ -1594,6 +1594,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:5.90.7":
+  version: 5.90.7
+  resolution: "@tanstack/query-core@npm:5.90.7"
+  checksum: 10c0/82198b1ed8c6c1cfd87ec904e241af4839b82597a67744fb972008739cc89ded359509b8599ba7079040111c4a2a573884301d9a2fa39fc48337d2945300525c
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^5.90.7":
+  version: 5.90.7
+  resolution: "@tanstack/react-query@npm:5.90.7"
+  dependencies:
+    "@tanstack/query-core": "npm:5.90.7"
+  peerDependencies:
+    react: ^18 || ^19
+  checksum: 10c0/a4508f115f2b604962e534f7218c1a07707414456ffe900c50ab2dbbd2e46e7f2336d1c8793929722fb262a67cf8d118448e71b6bac4da6b2155d69c628d8855
+  languageName: node
+  linkType: hard
+
 "@testing-library/jest-dom@npm:^6.6.3":
   version: 6.9.1
   resolution: "@testing-library/jest-dom@npm:6.9.1"
@@ -1621,6 +1639,60 @@ __metadata:
   version: 1.1.2
   resolution: "@tootallnate/once@npm:1.1.2"
   checksum: 10c0/8fe4d006e90422883a4fa9339dd05a83ff626806262e1710cee5758d493e8cbddf2db81c0e4690636dc840b02c9fda62877866ea774ebd07c1777ed5fafbdec6
+  languageName: node
+  linkType: hard
+
+"@trpc/client@npm:^11.7.1":
+  version: 11.7.1
+  resolution: "@trpc/client@npm:11.7.1"
+  peerDependencies:
+    "@trpc/server": 11.7.1
+    typescript: ">=5.7.2"
+  checksum: 10c0/73b0ad9cc272ac8601f6f47c46a870ddf5e1ceb23a0b711b9f5563ac5193c48cb6d773fff6769ead60cb5f867a02627b76e8d80383149b2150482f2d85cae2e5
+  languageName: node
+  linkType: hard
+
+"@trpc/next@npm:^11.7.1":
+  version: 11.7.1
+  resolution: "@trpc/next@npm:11.7.1"
+  peerDependencies:
+    "@tanstack/react-query": ^5.59.15
+    "@trpc/client": 11.7.1
+    "@trpc/react-query": 11.7.1
+    "@trpc/server": 11.7.1
+    next: "*"
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+    typescript: ">=5.7.2"
+  peerDependenciesMeta:
+    "@tanstack/react-query":
+      optional: true
+    "@trpc/react-query":
+      optional: true
+  checksum: 10c0/f8bb35262f6c70e00759068cc4e534a7079234c25d2e8ca0f213f2d60b5efe2e02c2ba1b6fce7855f3e82f197f237df2f59a6981202081aaeed02291656b2743
+  languageName: node
+  linkType: hard
+
+"@trpc/react-query@npm:^11.7.1":
+  version: 11.7.1
+  resolution: "@trpc/react-query@npm:11.7.1"
+  peerDependencies:
+    "@tanstack/react-query": ^5.80.3
+    "@trpc/client": 11.7.1
+    "@trpc/server": 11.7.1
+    react: ">=18.2.0"
+    react-dom: ">=18.2.0"
+    typescript: ">=5.7.2"
+  checksum: 10c0/e21626a4bcf70cc130279b4d56cbde6005ee7e6cbe3eadad21749e45c20147a0a679de14b67467fcae3043d6a579f2958ebdc6b08ee5cd7acf8ab8575a55fc5e
+  languageName: node
+  linkType: hard
+
+"@trpc/server@npm:^11.7.1":
+  version: 11.7.1
+  resolution: "@trpc/server@npm:11.7.1"
+  peerDependencies:
+    typescript: ">=5.7.2"
+  checksum: 10c0/7ff3568872860d6a268a993a165e7a6815170fde58bfb49d7ad6232283a49550c9f6b2293468d24f2c242ffd2504ea1960521b6ed58b29856c971ad3a0e75e3a
   languageName: node
   linkType: hard
 
@@ -2633,6 +2705,11 @@ __metadata:
     "@storybook/addon-vitest": "npm:9.1.13"
     "@storybook/nextjs-vite": "npm:9.1.13"
     "@tailwindcss/postcss": "npm:^4.1.11"
+    "@tanstack/react-query": "npm:^5.90.7"
+    "@trpc/client": "npm:^11.7.1"
+    "@trpc/next": "npm:^11.7.1"
+    "@trpc/react-query": "npm:^11.7.1"
+    "@trpc/server": "npm:^11.7.1"
     "@types/js-cookie": "npm:^3.0.6"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
@@ -2662,6 +2739,7 @@ __metadata:
     sequelize-cli: "npm:^6.6.3"
     sqlite3: "npm:^5.1.7"
     storybook: "npm:9.1.13"
+    superjson: "npm:^2.2.5"
     tailwind-merge: "npm:^3.3.1"
     tailwindcss: "npm:^4.1.11"
     tsc: "npm:^2.0.4"
@@ -2928,6 +3006,15 @@ __metadata:
   version: 2.0.0
   resolution: "convert-source-map@npm:2.0.0"
   checksum: 10c0/8f2f7a27a1a011cc6cc88cc4da2d7d0cfa5ee0369508baae3d98c260bb3ac520691464e5bbe4ae7cdf09860c1d69ecc6f70c63c6e7c7f7e3f18ec08484dc7d9b
+  languageName: node
+  linkType: hard
+
+"copy-anything@npm:^4":
+  version: 4.0.5
+  resolution: "copy-anything@npm:4.0.5"
+  dependencies:
+    is-what: "npm:^5.2.0"
+  checksum: 10c0/d0a4a4102334399dae8504a2c2e13f45ad05746a9fd5cc0df349a554e3749a05e8a6d62b3724a8049cd59fc0bbbf4f54c4edc94a428edc76211dffe3ac0af586
   languageName: node
   linkType: hard
 
@@ -4893,6 +4980,13 @@ __metadata:
     call-bind: "npm:^1.0.7"
     get-intrinsic: "npm:^1.2.4"
   checksum: 10c0/8ad6141b6a400e7ce7c7442a13928c676d07b1f315ab77d9912920bf5f4170622f43126f111615788f26c3b1871158a6797c862233124507db0bcc33a9537d1a
+  languageName: node
+  linkType: hard
+
+"is-what@npm:^5.2.0":
+  version: 5.5.0
+  resolution: "is-what@npm:5.5.0"
+  checksum: 10c0/065c8a4ac651988a495cc0211c2754c198788383c9fe1bbfdf6d237c423114a0c5f2fc3e26ad7ea43a63cd4169f4503f584305acbac91706d5308cc14dedd1bd
   languageName: node
   linkType: hard
 
@@ -7505,6 +7599,15 @@ __metadata:
     babel-plugin-macros:
       optional: true
   checksum: 10c0/ace50e7ea5ae5ae6a3b65a50994c51fca6ae7df9c7ecfd0104c36be0b4b3a9c5c1a2374d16e2a11e256d0b20be6d47256d768ecb4f91ab390f60752a075780f5
+  languageName: node
+  linkType: hard
+
+"superjson@npm:^2.2.5":
+  version: 2.2.5
+  resolution: "superjson@npm:2.2.5"
+  dependencies:
+    copy-anything: "npm:^4"
+  checksum: 10c0/3813cbf3d0a0d8b0b05c5ba38ab17a5f38258ff611372a702ed21fe73dc7fb798babb7bed08014d937c7f1823bb15f4ba25cf6dd6402c0ddb755e69f9bc73bf3
   languageName: node
   linkType: hard
 

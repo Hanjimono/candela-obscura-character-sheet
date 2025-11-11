@@ -1,5 +1,7 @@
-import CharacterListPageContent from "./characterList";
+import CharacterListPageContent from "./characterList"
+import { api } from "@/server/trpc/server"
 
 export default async function CharacterListPage() {
-  return <CharacterListPageContent />;
+  const characters = await api.character.list()
+  return <CharacterListPageContent />
 }
